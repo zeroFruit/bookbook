@@ -1,0 +1,33 @@
+body {
+    background-color: #FFFFFF;
+  }
+.ui.menu .item img.logo {
+  margin-right: 1.5em;
+}
+.main.container {
+  margin-top: 7em;
+}
+.wireframe {
+  margin-top: 2em;
+}
+.ui.footer.segment {
+  margin: 5em 0em 0em;
+  padding: 10em 0em;
+}
+
+#result_loader {
+  position: absolute;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+}
+
+#result_wrapper {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+}
+
+#book_description {
+  padding: 2em 2em;
+}

@@ -7,6 +7,23 @@ body > .grid {
 .image {
   margin-top: -100px;
 }
-.column {
-  max-width: 450px;
+
+#loader {
+  position: absolute;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+}
+
+#wrapper {
+  display: none;
+}
+
+
+._content {
+  display: block;
+  height: 80vh;
+  width: 100vh;
+  padding-top: 5vh;
+  margin-bottom: 10vh;
 }

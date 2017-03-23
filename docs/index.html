@@ -8,34 +8,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <!-- Site Properties -->
-  <title>bookbook - Index</title>
-  <link rel="stylesheet" type="text/css" href="./css/libs/semantic/dist/semantic.min.css">
+  <title>bookbook - 메인</title>
+  <link rel="stylesheet" type="text/css" href="css/libs/semantic/dist/semantic.min.css">
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-  <script src="./css/libs/semantic/dist/semantic.min.js"></script>
-  <script src="./js/main.js"></script>
+  <script src="css/libs/semantic/dist/semantic.min.js"></script>
 
-  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 
-<div class="ui middle aligned center aligned grid">
-  <div class="column">
-    <h2 class="ui teal image header">
-      <div class="content">
-        bookbook
-      </div>
-    </h2>
-
-    <form class="ui large form">
-      <div class="ui message">
-        키워드를 토대로 책을 추천해줍니다.
-
-      </div>
-      <div class="ui fluid large teal submit button">책 추천</div>
-
-    </form>
+  <div id="loader" class="ui segment">
+    <div class="ui active dimmer inverted">
+      <div class="ui massive text loader">책 정보를 불러오고 있습니다.</div>
+    </div>
   </div>
-</div>
+
+  <div id="wrapper" class="ui middle aligned center aligned grid">
+
+    <div class="ui ten wide centered grid">
+
+      <form id="rec-form" class="ui large form" action="result.html">
+        <!-- 워드 클라우드 -->
+        <div id="wordcloud" class='_content'></div>
+
+        <div id="rec-btn" class="ui fluid large teal button">책 추천</div>
+      </form>
+
+    </div>
+  </div>
+
+
+  <script src="js/libs/wordcloud2.js"></script>
+  <script src="js/wordcloud.js"></script>
+  <script src="js/init.js"></script>
 
 </body>
 
