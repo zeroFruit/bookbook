@@ -1,5 +1,5 @@
 
-localStorage.setItem('url', 'http://ec2-13-124-78-253.ap-northeast-2.compute.amazonaws.com:8080');
+localStorage.setItem('url', 'https://bookbookapi.xyz');
 
 /*
   서버에서 키워드 자료들을 받아옵니다.
